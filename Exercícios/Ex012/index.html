@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados loccalmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <!-- Lembrando que vídoes hospedados localmente sai mais caro pro cliente. -->
+    <h2>Primeira forma.</h2>
+    <video src="media/meuvideo.mp4" width="500" controls></video>
+
+    <h2>Segunda forma.</h2>
+    <!-- Parâmetro: controls: mostra os controles de play, pause, volume, fazer download,etc... -->
+    <!-- Parâmetro: width: tamanho da tela no navegador.-->
+    <!--Parâmetro: poster: para inserir uma thumb(imagem) do video.-->
+    <video controls width="560" poster="imagem/kang.png" loop >
+        <source src="media/meuvideo.webm" type="video/webm"> <!--Formato mais recomendado e usado-->
+        <source src="media/meuvideo.mkv" type="video/mp4"> <!--Formato mais recomendado e usado-->
+        <source src="media/meuvideo.mp4" type="video/mp4"> <!--Formato mais recomendado e usado-->
+        <source src="media/meuvideo.ogv" type="video/ogg"> <!--Formato mais pesado, menso recomendado-->
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeo.</p>
+    </video>
+    
+    <h1>Inseridno vídeos do YouTube</h1>
+    <!-- Não consome recursos do servidor do cliente -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=ehWcPuBAamLoapXR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/197093965?h=7fbc516b5a&color=ff9933&title=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML.5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+    <h1>Reproduziando áudio</h1>
+    <p>Vamos aprender a reproduzir áudios no HTML5.</p>
+    <h2>Primeira forma de reproduzir áudios</h2>
+    <audio src="media/hiphop.mp3" controls></audio>
+    <h2>Segunda forma de reproduzir áudios</h2>
+    <!-- Parâmetro: preload="metadata":Carrega nome do arquivo, data, duração. -->
+    <!-- Parâmetro: loop: Quando acabar o áudiio ele reinicia novamente. -->
+    <!-- Parâmetro: controls: mostra os controles de "play,pause, volume, fazer dowload e velocidade do áudio" no navegador -->
+    <audio preload="metadata" controls loop>
+        <source src="media/hiphop.mp3" type="audio/mpeg"> <!--Formato mpeg-->
+        <source src="media/hiphop.mp3" type="audio/ogg"> <!--Formato opensource-->
+        <source src="media/hiphop.mp3" type="audio/WAV"> <!--Os arquivos WAV são muito grandes e pesados, sempre evitar-->
+        <p>Infelizmente seu navegador não consegue reproduzir o áudio. <a href="media/hiphop.mp3"> Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    <!--Formatos de MP3 WAV OGG -->
+
+    <h1></h1>
+</body>
+</html> 

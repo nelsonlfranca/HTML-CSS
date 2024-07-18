@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/* 
+    em HTML é id e em CSS é # (Classifica apenas 1 elemento)
+    em HTML é class e em CSS é . (Classifica vários elementos)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Righteous&display=swap');
+
+body {
+    background-color: rgb(97, 226, 97);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#principal {
+    text-align: center; 
+    color: rgb(255, 255, 255);
+    background-color: rgb(31, 83, 40);
+    font-family: "Righteous", sans-serif;
+ }
+
+h1 {
+color: rgb(31, 83, 40);
+}
+
+.basico {
+color: rgb(67, 148, 67);
+font-family: "Comfortaa", sans-serif;
+}
+
+.intermediario {
+color: rgb(149, 151, 39);
+font-family: "Comfortaa", sans-serif;
+}
+
+.avancado {
+color: rgb(136, 35, 35);
+font-family: "Comfortaa", sans-serif;
+}
+
+h2 {
+color: rgb(67, 148, 67);
+}
+
+.destaque {
+    background-color: rgba(252, 252, 31, 0.473);
+    font-family: "Bebas Neue", sans-serif;
+}
+
+p {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}

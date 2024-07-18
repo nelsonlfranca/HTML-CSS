@@ -1,0 +1,146 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url("fontes/idroid.otf");
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(127, 255, 165);
+    margin: 0px;
+    font-size: 22px;
+}
+
+#robo {
+    display: flex;
+    justify-content: center;
+}
+
+#irina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bugdroid {
+    display: flex;
+    justify-content: center;
+}
+
+#video {
+    display: flex;
+    justify-content: center;
+    background-color: green;
+}
+
+.h2 {
+    background-image: linear-gradient(to right, green);
+}
+
+p {
+   text-align: justify;
+   text-indent: 40px;
+   padding: 10px; 
+}
+
+#titulo {
+    background-image: linear-gradient(to top, rgb(1, 70, 1), rgb(5, 160, 113));
+    margin: 0px;
+    padding-top: 15px;
+}
+
+#titulo > h1 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+    color: white;
+    margin: 0px;
+}
+
+#titulo > p {
+    text-align: center;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.links {
+    padding-left: 0px;
+}
+
+#titulo > ul > li{
+    display: inline;
+    text-align: start;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: rgba(47, 255, 57, 0.658);
+    border-color: rgb(51, 156, 57);
+    border-radius: 4px;
+}
+
+main {
+    background-color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+main > h2 {
+    background-image: linear-gradient(to right, rgba(97, 207, 97, 0.589), rgba(92, 165, 92, 0));
+    margin: 15px;
+    font-family: 'Android';
+    color: rgb(4, 112, 4);
+    font-size: 20px;  
+}
+
+main > h1 {
+    margin: 15px;
+    font-family: 'Android';
+    font-size: 30px;
+    color: rgb(4, 112, 4);
+}
+
+#extra{
+    justify-content: center;
+    background-color: rgb(157, 240, 157);
+    border-radius: 10px;
+    margin: 11px;
+
+}
+
+#extra li {
+    background-color:  rgb(157, 240, 157);
+    text-decoration: none;
+}
+
+.versao {
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-block;
+    align-items: end;
+}
+
+.versao1 {
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-block;
+}
+
+h4 {
+    background-color: green;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+}
