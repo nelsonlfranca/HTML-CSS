@@ -1,0 +1,38 @@
+
+body {
+    background-color: gray;
+}
+
+.quadrado {
+    width: 100px; /*Largura*/
+    height: 100px; /*Altura*/
+    border: 2px solid black; /*Borda*/
+    display: inline-block; /*lado a lado*/
+    border-radius: 10px; /*Cantos arredondados*/
+}
+
+#q1 {
+    background-image: url(imagens/pattern002.png);
+    
+}
+
+#q2 {
+    background-image: linear-gradient(to top, yellow, red);
+}
+
+#q3 {
+    background-image: url(imagens/pattern001.png);
+    
+}
+
+#q4 {
+    background-color: aqua;
+}
+
+#q5 {
+    background-image: url(imagens/pattern003.png)
+}
+
+#q6 {
+    background-image: radial-gradient(rgb(2, 194, 2), cyan);
+}
