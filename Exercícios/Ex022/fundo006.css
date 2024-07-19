@@ -1,6 +1,6 @@
 body {
     height: 100vh;
-    background-color: gray;
+    background-color: rgb(0, 0, 0);
     background-image: url(imagens/wallpaper002.jpg);
     background-position: center center;
     background-repeat: repeat-y;
