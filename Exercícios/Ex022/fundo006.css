@@ -1,16 +1,23 @@
 body {
     height: 100vh;
-    background-color: rgb(0, 0, 0);
-    background-image: url(imagens/wallpaper002.jpg);
-    background-position: center center;
-    background-repeat: repeat-y;
-    background-size: cover;/*A imagem se adapta à página*/
+    /*Shorthand background
+    color > image > position > repeat > SIZE > attachment
+    O SIZE é o unico que não funciona na Shorthand no navegador
+    */
+    background: gray url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+    background-size: cover 
+
+    /*
+    background-size: cover; <A imagem se adapta à página>
+    background-attachment: scroll; <O fundo rola junto como conteúdo>
+    background-attachment: fixed; <Rola o conteúdo e o fundo fica fixo>
+    */
 }
 
 main {
     background-color: white;
     margin: auto;
-    width: 400px;
+    max-width: 400px;
     padding: 10px;
     border: 2px solid green;
 border-radius: 15px;
