@@ -1,0 +1,13 @@
+body {
+    background: gray url(espaco.jpg) center center no-repeat fixed;
+    background-size: cover; 
+    position: relative;
+    background-attachment: fixed;
+}
+
+main {
+    background-image: url(astronauta.png);
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
