@@ -23,14 +23,14 @@ body {
 }
 
 header {
-    background-image: linear-gradient(to bottom, #e7bf0d, #8a5b04);
+    background-color: black;
     color: #63524E;
     text-align: center;
     font-weight: bold;
 }
 
 header hr {
-    border-color: #332623;
+    border-color: #ffffff;
 }
 
 header h1 {
@@ -57,7 +57,7 @@ header a:hover {
 pre {
     white-space: pre-line;
     font-family: var(--fonte3);
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 section {
@@ -77,7 +77,7 @@ section pre {
 }
 
 section.normal {
-    background-image: linear-gradient(to right, #63524E, #8A5B04);
+    background-color: white;
     padding-bottom: 1em;
     box-shadow: inset 1px 1px 10px 0px rgba(0, 0, 0, 0.637);
 }
