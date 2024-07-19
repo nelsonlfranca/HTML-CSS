@@ -57,7 +57,6 @@ header a:hover {
 pre {
     white-space: pre-line;
     font-family: var(--fonte3);
-    font-size: 2em;
 }
 
 section {
@@ -80,6 +79,7 @@ section.normal {
     background-color: white;
     padding-bottom: 1em;
     box-shadow: inset 1px 1px 10px 0px rgba(0, 0, 0, 0.637);
+    font-size: 30px;
 }
 
 section.imagem {
@@ -88,6 +88,7 @@ section.imagem {
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.637);
     background-size: cover; 
     background-attachment: fixed;
+    font-size: 30px;
 }
 
 
