@@ -23,9 +23,14 @@ body {
 }
 
 header {
-    background-color: black;
-    color: white;
+    background-image: linear-gradient(to bottom, #e7bf0d, #8a5b04);
+    color: #63524E;
     text-align: center;
+    font-weight: bold;
+}
+
+header hr {
+    border-color: #332623;
 }
 
 header h1 {
@@ -41,7 +46,7 @@ header p {
 
 header a {
     text-decoration: none;
-    color: white;
+    color: #393231;
     font-weight: bolder;
 }
 
@@ -62,25 +67,49 @@ section {
     font-size: 3vw;
 }
 
+section pre {
+    padding: 2em 0px;
+}
+
+section pre {
+    padding-bottom: 2em;
+}
+
 section.normal {
-    background-color: white;
-    color: black;
+    background-image: linear-gradient(to right, #63524E, #8A5B04);
+    padding-bottom: 1em;
+    box-shadow: inset 1px 1px 10px 0px rgba(0, 0, 0, 0.637);
 }
 
 section.imagem {
-    background-color: rgba(0, 0, 0, 0.521);
-    color: white;
+    background-color: rgba(0, 0, 0, 0.856);
+    color: rgb(255, 255, 255);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.637);
+    background-size: cover; 
+    background-attachment: fixed;
 }
 
 
 section.imagem pre {
     padding: 10px;
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.534);
+    background-color: rgba(0, 0, 0, 0.548);
+    text-shadow: 1px 1px 0px black;
+    border-radius: 7px;
+}
+
+#img1 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+
+#img2 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
 }
 
 footer p {
-    background-color: black;
+    background-image: linear-gradient(to left, #ebc416, #8a5b04);
     color: white;
     text-align: center;
 }
