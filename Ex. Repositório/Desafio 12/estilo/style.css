@@ -57,6 +57,7 @@ header a:hover {
 pre {
     white-space: pre-line;
     font-family: var(--fonte3);
+    font-size: 1.5em;
 }
 
 section {
