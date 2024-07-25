@@ -14,12 +14,21 @@
             height: 75px;
             padding: 8px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1;
+            font-weight: bold;
+            padding: 10px;
+            border: 1px solid black;
+            background-color: #eaecf0;
         }
 
         td {
             text-align: center;
             width: 150px;
-            height: 50px;
+            height: 20px;
 
         }
 
@@ -28,13 +37,30 @@
         }
 
         thead {
-            background-color: #eaecf0;
+            background-color: #252525;
             height: 50px;
+            color: white;
+        }
+
+        thead tr th {
+            position: sticky;
+            top: 0;
+            background-color: #252525;
+        }
+
+        tbody  tr:nth-child(even){
+            background-color: lightgray;
+        }
+
+        tbody td {
+            height: 30px;
         }
 
         tfoot {
-            background-color: #eaecf0;
+            background-color: #252525;
             height: 50px;
+            font-weight: bold;
+            color: white;
         }
 
         .numero {
@@ -52,21 +78,22 @@
     <!-- 
         ANATOMIA PARA TABELAS GRANDES
         TABLE
-            THEAD
-                TR, TD. TH
-            TBODY
-                TR, TD, TH
-            TFOOT
-                TR, TD, TH
+            |CAPTION
+                THEAD
+                    TR, TD. TH
+                TBODY
+                    TR, TD, TH
+                TFOOT
+                    TR, TD, TH
     -->
-
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Unidade Federativa</th>
-                <th>População (2022)</th>
-                <th>Populaçã0 (2010)</th>
-                <th>Mudança</th>
+                <th scope="col">Unidade Federativa</th>
+                <th scope="col">População (2022)</th>
+                <th scope="col">Populaçã0 (2010)</th>
+                <th scope="col">Mudança</th>
             </tr>
         </thead>
         
@@ -75,30 +102,183 @@
                 <td>São Paulo</td>
                 <td class="numero">44.411.238</td>
                 <td class="numero">41.262.199</td>
-                <td class="numero porcento">+ 7.63%</td>
+                <td class="numero porcento">+7.63%</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
                 <td class="numero">20.538.718</td>
                 <td class="numero">19.597.330</td>
-                <td class="numero porcento">+ 4.81%</td>
+                <td class="numero porcento">+4.81%</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
                 <td class="numero">16.054.524</td>
                 <td class="numero">15.989.929</td>
-                <td class="numero porcento">+ 0.40%</td>
+                <td class="numero porcento">+0.40%</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14.141.626</td>
+                <td class="numero">14.016.906</td>
+                <td class="numero porcento">+0.89%</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11.444.380</td>
+                <td class="numero">10.444.526</td>
+                <td class="numero porcento">+9.57%</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">10.882.965</td>
+                <td class="numero">10.693.929</td>
+                <td class="numero porcento">+1.76%</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">9.058.931</td>
+                <td class="numero">8.796.448</td>
+                <td class="numero porcento">+2.98%</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="numero">8.794.957</td>
+                <td class="numero">8.452.381</td>
+                <td class="numero porcento">+4.05%</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="numero">8.121.025</td>
+                <td class="numero">7.581.051</td>
+                <td class="numero porcento">+7.12%</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">7.610.361</td>
+                <td class="numero">6.248.436</td>
+                <td class="numero porcento">+21.78%</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="numero">7.056.495</td>
+                <td class="numero">6.003.788</td>
+                <td class="numero porcento">+17.51%</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="numero">6.775.805</td>
+                <td class="numero">6.574.789</td>
+                <td class="numero porcento">+3.05%</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="numero">3.974.687</td>
+                <td class="numero">3.766.528</td>
+                <td class="numero porcento">+5.52%</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">3.941.613</td>
+                <td class="numero">3.483.985</td>
+                <td class="numero porcento">+13.12%</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="numero">3.833.712</td>
+                <td class="numero">3.514.952</td>
+                <td class="numero porcento">+9.06%</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="numero">3.658.649</td>
+                <td class="numero">3.035.122</td>
+                <td class="numero porcento">+20.55%</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="numero">3.302.729</td>
+                <td class="numero">3.168.027</td>
+                <td class="numero porcento">+4.24%</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="numero">3.271.199</td>
+                <td class="numero">3.118.360</td>
+                <td class="numero porcento">+4.88%</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="numero">3.127.683</td>
+                <td class="numero">3.120.494</td>
+                <td class="numero porcento">+4.88%</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="numero">2.817.381</td>
+                <td class="numero">2.570.160</td>
+                <td class="numero porcento">+9.62%</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="numero">2.757.013</td>
+                <td class="numero">2.449.024</td>
+                <td class="numero porcento">+12.56%</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="numero">2.209.558</td>
+                <td class="numero">2.068.017</td>
+                <td class="numero porcento">+6.86%</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="numero">1.581.196</td>
+                <td class="numero">1.562.409</td>
+                <td class="numero porcento">+1.19%</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="numero">1.511.460</td>
+                <td class="numero">1.383.445</td>
+                <td class="numero porcento">+9.25%</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="numero">830.018</td>
+                <td class="numero">733.559</td>
+                <td class="numero porcento">+13.15%</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="numero">733.759</td>
+                <td class="numero">669.526</td>
+                <td class="numero porcento">+9.56%</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="numero">636.707</td>
+                <td class="numero">450.479</td>
+                <td class="numero porcento">+41.26%</td>
             </tr>
         </tbody>
         
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td class="numero"><strong>81.004.480</strong></td>
-                <td class="numero"><strong>76.849.458</strong></td>
-                <td class="numero porcento"><strong>+ 12.84%</strong></td>
+                <th scope="row">Total de Habitantes</th>
+                <td class="numero">203.062.512</td>
+                <td class="numero">180.073.492</td>
+                <td class="numero porcento">+247.25%</td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis corrupti ipsum vitae, aliquid iure, itaque esse, dolore ab sit atque error! Reprehenderit, alias enim perferendis vero consectetur maxime molestiae. Iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod praesentium, voluptatem corporis exercitationem consequatur natus. A nisi sint magnam est cum minima voluptate adipisci quas consequuntur doloremque amet, aliquid ullam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia soluta, ea odit aliquam possimus inventore ratione et neque accusantium voluptatum molestias nostrum fugit in recusandae unde molestiae dolorum dolor nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis doloremque natus nam obcaecati quod. Quasi dolorum blanditiis ea, a deleniti, asperiores ducimus est qui dolor sit amet ad delectus soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda magnam qui, iusto, aliquid labore laudantium sed maxime provident, suscipit temporibus iure cupiditate! Dicta est quasi eligendi facere nulla. Consectetur, earum.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis corrupti ipsum vitae, aliquid iure, itaque esse, dolore ab sit atque error! Reprehenderit, alias enim perferendis vero consectetur maxime molestiae. Iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod praesentium, voluptatem corporis exercitationem consequatur natus. A nisi sint magnam est cum minima voluptate adipisci quas consequuntur doloremque amet, aliquid ullam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia soluta, ea odit aliquam possimus inventore ratione et neque accusantium voluptatum molestias nostrum fugit in recusandae unde molestiae dolorum dolor nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis doloremque natus nam obcaecati quod. Quasi dolorum blanditiis ea, a deleniti, asperiores ducimus est qui dolor sit amet ad delectus soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda magnam qui, iusto, aliquid labore laudantium sed maxime provident, suscipit temporibus iure cupiditate! Dicta est quasi eligendi facere nulla. Consectetur, earum.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis corrupti ipsum vitae, aliquid iure, itaque esse, dolore ab sit atque error! Reprehenderit, alias enim perferendis vero consectetur maxime molestiae. Iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod praesentium, voluptatem corporis exercitationem consequatur natus. A nisi sint magnam est cum minima voluptate adipisci quas consequuntur doloremque amet, aliquid ullam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia soluta, ea odit aliquam possimus inventore ratione et neque accusantium voluptatum molestias nostrum fugit in recusandae unde molestiae dolorum dolor nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis doloremque natus nam obcaecati quod. Quasi dolorum blanditiis ea, a deleniti, asperiores ducimus est qui dolor sit amet ad delectus soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda magnam qui, iusto, aliquid labore laudantium sed maxime provident, suscipit temporibus iure cupiditate! Dicta est quasi eligendi facere nulla. Consectetur, earum.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis corrupti ipsum vitae, aliquid iure, itaque esse, dolore ab sit atque error! Reprehenderit, alias enim perferendis vero consectetur maxime molestiae. Iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod praesentium, voluptatem corporis exercitationem consequatur natus. A nisi sint magnam est cum minima voluptate adipisci quas consequuntur doloremque amet, aliquid ullam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia soluta, ea odit aliquam possimus inventore ratione et neque accusantium voluptatum molestias nostrum fugit in recusandae unde molestiae dolorum dolor nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis doloremque natus nam obcaecati quod. Quasi dolorum blanditiis ea, a deleniti, asperiores ducimus est qui dolor sit amet ad delectus soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda magnam qui, iusto, aliquid labore laudantium sed maxime provident, suscipit temporibus iure cupiditate! Dicta est quasi eligendi facere nulla. Consectetur, earum.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis corrupti ipsum vitae, aliquid iure, itaque esse, dolore ab sit atque error! Reprehenderit, alias enim perferendis vero consectetur maxime molestiae. Iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod praesentium, voluptatem corporis exercitationem consequatur natus. A nisi sint magnam est cum minima voluptate adipisci quas consequuntur doloremque amet, aliquid ullam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia soluta, ea odit aliquam possimus inventore ratione et neque accusantium voluptatum molestias nostrum fugit in recusandae unde molestiae dolorum dolor nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis doloremque natus nam obcaecati quod. Quasi dolorum blanditiis ea, a deleniti, asperiores ducimus est qui dolor sit amet ad delectus soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda magnam qui, iusto, aliquid labore laudantium sed maxime provident, suscipit temporibus iure cupiditate! Dicta est quasi eligendi facere nulla. Consectetur, earum.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis corrupti ipsum vitae, aliquid iure, itaque esse, dolore ab sit atque error! Reprehenderit, alias enim perferendis vero consectetur maxime molestiae. Iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod praesentium, voluptatem corporis exercitationem consequatur natus. A nisi sint magnam est cum minima voluptate adipisci quas consequuntur doloremque amet, aliquid ullam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia soluta, ea odit aliquam possimus inventore ratione et neque accusantium voluptatum molestias nostrum fugit in recusandae unde molestiae dolorum dolor nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis doloremque natus nam obcaecati quod. Quasi dolorum blanditiis ea, a deleniti, asperiores ducimus est qui dolor sit amet ad delectus soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda magnam qui, iusto, aliquid labore laudantium sed maxime provident, suscipit temporibus iure cupiditate! Dicta est quasi eligendi facere nulla. Consectetur, earum.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis corrupti ipsum vitae, aliquid iure, itaque esse, dolore ab sit atque error! Reprehenderit, alias enim perferendis vero consectetur maxime molestiae. Iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod praesentium, voluptatem corporis exercitationem consequatur natus. A nisi sint magnam est cum minima voluptate adipisci quas consequuntur doloremque amet, aliquid ullam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia soluta, ea odit aliquam possimus inventore ratione et neque accusantium voluptatum molestias nostrum fugit in recusandae unde molestiae dolorum dolor nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis doloremque natus nam obcaecati quod. Quasi dolorum blanditiis ea, a deleniti, asperiores ducimus est qui dolor sit amet ad delectus soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda magnam qui, iusto, aliquid labore laudantium sed maxime provident, suscipit temporibus iure cupiditate! Dicta est quasi eligendi facere nulla. Consectetur, earum.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis corrupti ipsum vitae, aliquid iure, itaque esse, dolore ab sit atque error! Reprehenderit, alias enim perferendis vero consectetur maxime molestiae. Iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod praesentium, voluptatem corporis exercitationem consequatur natus. A nisi sint magnam est cum minima voluptate adipisci quas consequuntur doloremque amet, aliquid ullam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia soluta, ea odit aliquam possimus inventore ratione et neque accusantium voluptatum molestias nostrum fugit in recusandae unde molestiae dolorum dolor nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis doloremque natus nam obcaecati quod. Quasi dolorum blanditiis ea, a deleniti, asperiores ducimus est qui dolor sit amet ad delectus soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda magnam qui, iusto, aliquid labore laudantium sed maxime provident, suscipit temporibus iure cupiditate! Dicta est quasi eligendi facere nulla. Consectetur, earum.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis corrupti ipsum vitae, aliquid iure, itaque esse, dolore ab sit atque error! Reprehenderit, alias enim perferendis vero consectetur maxime molestiae. Iste! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod praesentium, voluptatem corporis exercitationem consequatur natus. A nisi sint magnam est cum minima voluptate adipisci quas consequuntur doloremque amet, aliquid ullam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia soluta, ea odit aliquam possimus inventore ratione et neque accusantium voluptatum molestias nostrum fugit in recusandae unde molestiae dolorum dolor nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis doloremque natus nam obcaecati quod. Quasi dolorum blanditiis ea, a deleniti, asperiores ducimus est qui dolor sit amet ad delectus soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda magnam qui, iusto, aliquid labore laudantium sed maxime provident, suscipit temporibus iure cupiditate! Dicta est quasi eligendi facere nulla. Consectetur, earum.</p>
 </body>
 </html>
