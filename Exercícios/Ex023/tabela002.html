@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            height: 75px;
+            padding: 8px;
+            border-collapse: collapse;
+        }
+
+        td {
+            text-align: center;
+            width: 150px;
+            height: 50px;
+
+        }
+
+        td , th {
+            border: 2px solid black;
+        }
+
+        thead {
+            background-color: #eaecf0;
+            height: 50px;
+        }
+
+        tfoot {
+            background-color: #eaecf0;
+            height: 50px;
+        }
+
+        .numero {
+            text-align: right;
+        }
+
+        .porcento {
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas GRANDES</h1>
+    <!-- 
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TD. TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Unidade Federativa</th>
+                <th>População (2022)</th>
+                <th>Populaçã0 (2010)</th>
+                <th>Mudança</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">44.411.238</td>
+                <td class="numero">41.262.199</td>
+                <td class="numero porcento">+ 7.63%</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">20.538.718</td>
+                <td class="numero">19.597.330</td>
+                <td class="numero porcento">+ 4.81%</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">16.054.524</td>
+                <td class="numero">15.989.929</td>
+                <td class="numero porcento">+ 0.40%</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td class="numero"><strong>81.004.480</strong></td>
+                <td class="numero"><strong>76.849.458</strong></td>
+                <td class="numero porcento"><strong>+ 12.84%</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
