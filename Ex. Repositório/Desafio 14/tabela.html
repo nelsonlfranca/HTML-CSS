@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            margin: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        caption {
+            font-size: 18px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border: 1px solid b;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 600px;
+            height: 300px;
+        }
+
+        th {
+            border: 2px solid black;
+        }
+
+        td {
+            border: 2px solid black;
+
+        }
+
+        .head {
+            background-color: gray;
+            color: white;
+            font-size: 20px;
+            text-shadow: 1px solid black;
+        }
+
+        .n1 {
+            text-align: center;
+            background-color: gray;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .exatas {
+            text-align: center;
+            font-size: 22px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .humanas {
+            text-align: center;
+            font-size: 22px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .media {
+            text-align: start;
+            background-color: gray;
+            color: #fff;
+            padding: 0px 5px;
+            font-size: 20px;
+        }
+
+        .media-final {
+            text-align: end;
+        }
+
+        .mn {
+            text-align: center;
+        }
+
+        .numero {
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Notas das matérias</h1>
+    <table>
+        <caption>Matérias de Extas e Humanas</caption>
+
+        <thead>
+            <tr class="head">
+                <th rowspan="4">Área</th>
+                <th rowspan="2">Disciplina</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2">Média</th>
+            </tr>
+            <tr class="n1">
+                <th>Nota1</th>
+                <th>Nota2</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td rowspan="4" scope="rowgroup" class="exatas">Exatas</td>
+                    <td>Matemática</td>
+                    <td class="numero">8.0</td>
+                    <td class="numero">7.0</td>
+                    <td class="media-final" class="numero">7.5</td>
+                </tr>
+                <tr>
+                    <td>Física</td>
+                    <td class="numero">9.0</td>
+                    <td class="numero">10.0</td>
+                    <td class="media-final">9.5</td>
+                </tr>
+                <tr>
+                    <td>Química</td>
+                    <td class="numero">4.0</td>
+                    <td class="numero">6.0</td>
+                    <td class="media-final">5.0</td>
+                </tr>
+                <tr>
+                    <td>Biologia  </td>
+                    <td class="numero">2.0</td>
+                    <td class="numero">6.0</td>
+                    <td class="media-final" class="numero">4.0</td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="media">Média de Exatas</td>
+                    <td class="media"  class="numero">6.5</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" scope="rowgroup" class="humanas">Humanas</td>
+                    <td>História</td>
+                    <td class="numero">10.0</td>
+                    <td class="numero">9.0</td>
+                    <td class="media-final" class="numero">9.5</td>
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td class="numero">7.0</td>
+                    <td class="numero">7.0</td>
+                    <td class="media-final" class="numero">7.0</td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="media" class="mn">Média de Humanas</td>
+                    <td class="media">8.2</td>
+                </tr>
+            </tbody>
+            
+        </thead>
+    </table>
+</body>
+</html>
